@@ -1,36 +1,26 @@
 import { motion } from 'framer-motion'
-import { Shield, Wrench, Clock, MapPin, HardHat, CheckCircle2 } from 'lucide-react'
+import { Building2, Wrench, Shield, LifeBuoy } from 'lucide-react'
 
 const features = [
   {
-    icon: Shield,
-    title: 'Sikkerhet først',
-    desc: 'Strenge prosedyrer og sertifiseringer sikrer trygge arbeidsplasser for både våre ansatte og reisende.',
+    icon: Building2,
+    title: 'Nybygg',
+    desc: 'Planlegging og bygging av nye jernbaneanlegg og spor – levert sikkert og til avtalt tid.',
   },
   {
     icon: Wrench,
-    title: 'Teknisk kompetanse',
-    desc: 'Erfarne fagfolk innen spor, kontaktledning, signal og grunnarbeid.',
+    title: 'Vedlikehold',
+    desc: 'Forebyggende og korrektivt sporvedlikehold tilpasset trafikk og sikkerhetskrav.',
   },
   {
-    icon: Clock,
-    title: 'Leverer på tid',
-    desc: 'Effektiv planlegging og gjennomføring – vi holder frister, også i krevende prosjekter.',
+    icon: Shield,
+    title: 'Sikkerhet',
+    desc: 'Strenge prosedyrer, risikovurderinger og sertifisert personell – sikkerhet først, alltid.',
   },
   {
-    icon: MapPin,
-    title: 'Hele Norge',
-    desc: 'Mobil prosjektgjennomføring med utstyr og team som dekker hele landet.',
-  },
-  {
-    icon: HardHat,
-    title: 'Beredskap 24/7',
-    desc: 'Rask respons ved uforutsette hendelser og vedlikeholdsbehov.',
-  },
-  {
-    icon: CheckCircle2,
-    title: 'Dokumentert kvalitet',
-    desc: 'Sporbarhet, rapportering og kvalitetssystemer du kan stole på.',
+    icon: LifeBuoy,
+    title: 'Beredskap',
+    desc: 'Døgnkontinuerlig beredskap for uforutsette hendelser med rask mobilisering.',
   },
 ]
 
@@ -47,14 +37,14 @@ function Features() {
             transition={{ duration: 0.5 }}
             className="text-3xl sm:text-4xl font-bold text-white"
           >
-            Tjenester og kapasitet
+            Våre tjenester
           </motion.h2>
           <p className="mt-3 text-slate-300 max-w-2xl mx-auto">
-            Vi leverer komplette tjenester for bygging, vedlikehold og beredskap i jernbanen.
+            Vi fokuserer på nybygg, vedlikehold, sikkerhet og beredskap – ikke KL- eller signalarbeid.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((f, i) => (
             <motion.div
               key={f.title}

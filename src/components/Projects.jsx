@@ -12,9 +12,9 @@ const items = [
     desc: 'Akutt utretting etter uvær. Sikring av strekning og gjenåpning.',
   },
   {
-    title: 'Bergen – KL-arbeid',
+    title: 'Bergen – Sporvedlikehold',
     img: 'https://images.unsplash.com/photo-1526178312179-54a5b68b4ef1?q=80&w=1600&auto=format&fit=crop',
-    desc: 'Vedlikehold av kontaktledningsanlegg med sikkerhetsplanlegging.',
+    desc: 'Forebyggende vedlikehold med fokus på sikkerhet og effektiv trafikkavvikling.',
   },
 ]
 

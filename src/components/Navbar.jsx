@@ -16,7 +16,8 @@ function Navbar() {
         <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur supports-[backdrop-filter]:bg-white/10">
           <div className="flex items-center justify-between px-4 py-3 sm:px-6">
             <a href="#" className="flex items-center gap-3">
-              <div className="h-9 w-9 rounded-lg bg-gradient-to-tr from-sky-500 to-blue-600 shadow-lg shadow-sky-500/30 ring-1 ring-white/20" />
+              <img src="/logo.svg" alt="Nex Rail AS" className="h-9 w-auto hidden sm:block" onError={(e)=>{e.currentTarget.style.display='none'}} />
+              <div className="h-9 w-9 rounded-lg bg-gradient-to-tr from-sky-500 to-blue-600 shadow-lg shadow-sky-500/30 ring-1 ring-white/20 sm:hidden" />
               <span className="text-white text-lg font-semibold tracking-tight">Nex Rail AS</span>
             </a>
 
